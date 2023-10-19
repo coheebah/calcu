@@ -1,0 +1,43 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="calculate.css">
+    <title>calculator</title>
+</head>
+<body>
+
+<div class="calc">
+    <input type="text" id="result" readonly>
+    <button id="AC" onclick="clearResult()">AC</button>
+    <button id="plus-minus" onclick="addNumber('+/-')">+/-</button>
+    <button id="percent" onclick="addNumber('%')">%</button>
+    <button class="operator" onclick="setOperator('÷')">÷</button>
+    <button id="seven" onclick="addNumber('7')">7</button>
+    <button id="eight" onclick="addNumber('8')">8</button>
+    <button id="nine" onclick="addNumber('9')">9</button>
+    <button class="operator" onclick="setOperator('x')">x</button>
+    <button id="four" onclick="addNumber('4')">4</button>
+    <button id="five" onclick="addNumber('5')">5</button>
+    <button id="six" onclick="addNumber('6')">6</button>
+    <button class="operator" onclick="setOperator('-')">-</button>
+    <button id="one" onclick="addNumber('1')">1</button>
+    <button id="two" onclick="addNumber('2')">2</button>
+    <button id="three" onclick="addNumber('3')">3</button>
+    <button class="operator" onclick="setOperator('+')">+</button>
+    <br>
+    <button id="zero" onclick="addNumber('0')">0</button>
+    &nbsp<button id="dot" onclick="addNumber('.')">.</button>
+    <button class="operator" onclick="calculate()">=</button>
+</div>
+
+
+
+
+
+<script src="calculator.js"></script>
+
+</body>
+</html>
